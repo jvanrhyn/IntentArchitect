@@ -33,12 +33,14 @@ namespace <#= Namespace #>
     [IntentManaged(Mode.Merge)]
     public class <#= ClassName #>
     {
-        public <#= ClassName #>(IConfiguration configuration)
+        public <#= ClassName #>(IConfiguration configuration, IHostingEnvironment environment)
         {
             Configuration = configuration;
+            Environment = environment;
         }
 
         public IConfiguration Configuration { get; }
+        public IHostingEnvironment Environment { get; }
 
         // [IntentManaged(Mode.Ignore)] // Uncomment this line to take over management of configuring services
         public void ConfigureServices(IServiceCollection services)
