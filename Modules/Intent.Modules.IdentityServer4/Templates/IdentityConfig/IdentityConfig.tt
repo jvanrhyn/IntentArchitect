@@ -14,7 +14,7 @@ using System;
 
 namespace <#= Namespace #>
 {
-    public class <#= ClassName #>
+    public static class <#= ClassName #>
     {
 		public static List<TestUser> GetUsers()
         {

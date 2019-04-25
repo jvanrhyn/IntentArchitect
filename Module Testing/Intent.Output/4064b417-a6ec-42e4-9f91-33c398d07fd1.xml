@@ -55,15 +55,5 @@
       <SolutionRelativeFilePath>..\IdentityServer4Host\ModuleTesting.IdentityServer4Host.Application\ServiceImplementation\SimpleTest.cs</SolutionRelativeFilePath>
       <ProjectRelativeFilePath>ServiceImplementation\SimpleTest.cs</ProjectRelativeFilePath>
     </FileLog>
-    <FileLog>
-      <ProjectId>b7f04dfc-0061-48bf-94bb-531861117c95</ProjectId>
-      <SolutionRelativeFilePath>..\IdentityServer4Host\ModuleTesting.IdentityServer4Host.Domain\ModuleTesting.IdentityServer4Host.Domain.csproj</SolutionRelativeFilePath>
-      <ProjectRelativeFilePath>ModuleTesting.IdentityServer4Host.Domain.csproj</ProjectRelativeFilePath>
-    </FileLog>
-    <FileLog>
-      <ProjectId>c84191c5-f0cd-4350-988f-a9318dd8520f</ProjectId>
-      <SolutionRelativeFilePath>..\IdentityServer4Host\ModuleTesting.IdentityServer4Host.Infrastructure.Data\ModuleTesting.IdentityServer4Host.Infrastructure.Data.csproj</SolutionRelativeFilePath>
-      <ProjectRelativeFilePath>ModuleTesting.IdentityServer4Host.Infrastructure.Data.csproj</ProjectRelativeFilePath>
-    </FileLog>
   </FileLogs>
 </outputLog>

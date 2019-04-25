@@ -14,7 +14,7 @@ using Intent.RoslynWeaver.Attributes;
 namespace Intent.Modules.IdentityServer4.Templates.IdentityConfig
 {
     [IntentManaged(Mode.Merge, Body = Mode.Merge, Signature = Mode.Fully)]
-    partial class IdentityConfig : IntentRoslynProjectItemTemplateBase<object>
+    partial class IdentityConfig : IntentRoslynProjectItemTemplateBase<object>, IDeclareUsings
     {
         public const string TemplateId = "IdentityServer4.IdentityConfig";
 
@@ -25,6 +25,16 @@ namespace Intent.Modules.IdentityServer4.Templates.IdentityConfig
         public override RoslynMergeConfig ConfigureRoslynMerger()
         {
             return new RoslynMergeConfig(new TemplateMetaData(Id, "1.0"));
+        }
+
+        public IEnumerable<string> DeclareUsings()
+        {
+            return new []
+            {
+                "System.Collections.Generic",
+                "IdentityServer4.Models",
+                "IdentityServer4.Test"
+            };
         }
 
         [IntentManaged(Mode.Merge, Body = Mode.Ignore, Signature = Mode.Fully)]

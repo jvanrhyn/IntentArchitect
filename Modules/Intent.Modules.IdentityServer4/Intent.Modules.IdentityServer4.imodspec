@@ -26,7 +26,7 @@
   <dependencies>
     <dependency id="Intent.Common" version="1.7.0" />
     <dependency id="Intent.OutputManager.RoslynWeaver" version="1.7.0" />
-    <dependency id="Intent.AspNetCore" version="1.7.0" />
+    <dependency id="Intent.AspNetCore" version="1.7.1" />
   </dependencies>
   <files>
     <file src="bin\$configuration$\$id$.dll" />

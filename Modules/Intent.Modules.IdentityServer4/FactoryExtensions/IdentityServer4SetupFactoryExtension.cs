@@ -24,10 +24,10 @@ namespace Intent.Modules.IdentityServer4.FactoryExtensions
         private void SetupAddIdentityServer(IApplication application)
         {
             var serviceConfig = $@"var builder = services.AddIdentityServer()
-                .AddInMemoryIdentityResources(Config.GetIdentityResources())
-                .AddInMemoryApiResources(Config.GetApis())
-                .AddInMemoryClients(Config.GetClients())
-                .AddTestUsers(Config.GetUsers());
+                .AddInMemoryIdentityResources(IdentityConfig.GetIdentityResources())
+                .AddInMemoryApiResources(IdentityConfig.GetApis())
+                .AddInMemoryClients(IdentityConfig.GetClients())
+                .AddTestUsers(IdentityConfig.GetUsers());
 
             if (Environment.IsDevelopment())
             {{

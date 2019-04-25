@@ -21,11 +21,13 @@ namespace ModuleTesting.IdentityServer4Host.Api
     [IntentManaged(Mode.Merge)]
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
             Configuration = configuration;
+            Environment = environment;
         }
 
+        public IHostingEnvironment Environment { get; }
         public IConfiguration Configuration { get; }
 
         // [IntentManaged(Mode.Ignore)] // Uncomment this line to take over management of configuring services
@@ -36,10 +38,10 @@ namespace ModuleTesting.IdentityServer4Host.Api
 
             ConfigureSwagger(services);
             var builder = services.AddIdentityServer()
-                .AddInMemoryIdentityResources(Config.GetIdentityResources())
-                .AddInMemoryApiResources(Config.GetApis())
-                .AddInMemoryClients(Config.GetClients())
-                .AddTestUsers(Config.GetUsers());
+                .AddInMemoryIdentityResources(IdentityConfig.GetIdentityResources())
+                .AddInMemoryApiResources(IdentityConfig.GetApis())
+                .AddInMemoryClients(IdentityConfig.GetClients())
+                .AddTestUsers(IdentityConfig.GetUsers());
 
             if (Environment.IsDevelopment())
             {

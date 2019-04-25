@@ -1,5 +1,8 @@
 using System;
 using Intent.RoslynWeaver.Attributes;
+using IdentityServer4.Models;
+using IdentityServer4.Test;
+using System.Collections.Generic;
 
 // Mode.Fully will overwrite file on each run. 
 // Add in explicit [IntentManaged.Ignore] attributes to class or methods. Alternatively change to Mode.Merge (additive) or Mode.Ignore (once-off)
@@ -8,7 +11,7 @@ using Intent.RoslynWeaver.Attributes;
 
 namespace ModuleTesting.IdentityServer4Host.Api
 {
-    public class IdentityConfig
+    public static class IdentityConfig
     {
         public static List<TestUser> GetUsers()
         {

@@ -49,7 +49,7 @@ namespace ");
             
             #line default
             #line hidden
-            this.Write("\r\n{\r\n    public class ");
+            this.Write("\r\n{\r\n    public static class ");
             
             #line 17 "C:\Dev\Intent.Modules\Modules\Intent.Modules.IdentityServer4\Templates\IdentityConfig\IdentityConfig.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(ClassName));
