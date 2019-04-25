@@ -40,6 +40,7 @@ namespace Intent.Modules.IdentityServer4.FactoryExtensions
 
             application.EventDispatcher.Publish(ServiceConfigurationRequiredEvent.EventId, new Dictionary<string, string>()
             {
+                { ServiceConfigurationRequiredEvent.UsingsKey, string.Empty },
                 { ServiceConfigurationRequiredEvent.CallKey, serviceConfig }
             });
         }

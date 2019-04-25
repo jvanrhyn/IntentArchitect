@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="3103df20-a213-4fc6-b0bf-c996d7754984" type="Service">
+  <name>SimpleTest</name>
+  <isAbstract>false</isAbstract>
+  <isMapped>false</isMapped>
+  <parentFolderId>109345b0-16b4-4f33-9ced-df4871ca4782</parentFolderId>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="592B2300-6406-47EC-B7FC-358F87F6E4A4">
+      <addedByDefault>false</addedByDefault>
+      <properties>
+        <property name="01FDB27C-50B3-4C04-AC0E-69D211119910" value="api/[controller]" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <attributes />
+  <operations>
+    <operation id="8e1a0d33-bc5d-46da-95d2-768033bcba16" isAbstract="false">
+      <name>OperationA</name>
+      <parameters />
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="A225C795-33E9-417D-8D58-E22826A08224">
+          <addedByDefault>false</addedByDefault>
+          <properties />
+        </stereotype>
+        <stereotype stereotypeDefinitionId="049EB4F0-C89B-43B3-A082-AA7511858354">
+          <addedByDefault>false</addedByDefault>
+          <properties>
+            <property name="21C01082-802F-4099-BBCB-DFE56639B022" value="AUTO" />
+            <property name="13F033F5-9BC4-47C0-A2DE-92A10E039A23" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="64d4a412-03d8-46bb-90dc-8ddb186270e2">
+          <addedByDefault>false</addedByDefault>
+          <properties>
+            <property name="1bbe782d-85bd-4500-96b6-23c4131063cb" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+    </operation>
+  </operations>
+</class>

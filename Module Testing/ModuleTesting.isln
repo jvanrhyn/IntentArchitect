@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<solution id="abf74af4-3e1d-46a0-82ee-0deb96228b82">
+  <name>ModuleTesting</name>
+  <version>1.2.0</version>
+  <icon>globe</icon>
+  <iconType>FontAwesome</iconType>
+  <metadataRelativePath>Intent.MetaData</metadataRelativePath>
+  <applications>
+    <application id="4064b417-a6ec-42e4-9f91-33c398d07fd1" relativePath="IdentityServer4Host\IdentityServer4Host.application.config" />
+  </applications>
+</solution>
