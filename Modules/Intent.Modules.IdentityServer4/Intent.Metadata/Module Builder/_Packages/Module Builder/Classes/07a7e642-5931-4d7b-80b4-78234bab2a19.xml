@@ -9,7 +9,7 @@
       <addedByDefault>false</addedByDefault>
       <properties>
         <property name="311d788f-7582-4c27-9a4d-e0db1439c327" value="Single File (No Model)" />
-        <property name="C2283D15-4B57-4ED9-8AAE-6EFC73039034" value="Domain" />
+        <property name="C2283D15-4B57-4ED9-8AAE-6EFC73039034" value="Custom" />
       </properties>
     </stereotype>
   </stereotypes>
