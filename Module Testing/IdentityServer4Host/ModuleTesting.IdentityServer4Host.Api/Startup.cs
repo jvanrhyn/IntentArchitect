@@ -5,10 +5,13 @@ using System.Threading.Tasks;
 using Intent.RoslynWeaver.Attributes;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using ModuleTesting.IdentityServer4Host.Api.IdentityData;
+using ModuleTesting.IdentityServer4Host.Api.IdentityModels;
 using ModuleTesting.IdentityServer4Host.Application;
 using ModuleTesting.IdentityServer4Host.Application.ServiceImplementation;
 using Swashbuckle.AspNetCore.Swagger;
@@ -41,7 +44,13 @@ namespace ModuleTesting.IdentityServer4Host.Api
                 .AddInMemoryIdentityResources(IdentityConfig.GetIdentityResources())
                 .AddInMemoryApiResources(IdentityConfig.GetApis())
                 .AddInMemoryClients(IdentityConfig.GetClients())
-                .AddTestUsers(IdentityConfig.GetUsers());
+                //.AddTestUsers(IdentityConfig.GetUsers())
+                .AddAspNetIdentity<ApplicationUser>()
+                ;
+
+            services.AddIdentity<ApplicationUser, ApplicationRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
 
             if (Environment.IsDevelopment())
             {
